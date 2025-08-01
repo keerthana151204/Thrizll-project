@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Camera, Users, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-memories.jpg";
 
 export function HeroSection() {
@@ -35,13 +36,17 @@ export function HeroSection() {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-          <Button variant="heart" size="xl" className="gap-3">
-            <Heart className="w-5 h-5" />
-            Start Your Memory Journey
+          <Button variant="heart" size="xl" className="gap-3" asChild>
+            <Link to="/time-capsule">
+              <Heart className="w-5 h-5" />
+              Start Your Memory Journey
+            </Link>
           </Button>
-          <Button variant="vintage" size="xl" className="gap-3">
-            <Camera className="w-5 h-5" />
-            See How It Works
+          <Button variant="vintage" size="xl" className="gap-3" asChild>
+            <Link to="/memory-score">
+              <Camera className="w-5 h-5" />
+              See Your Bond Score
+            </Link>
           </Button>
         </div>
         

@@ -1,43 +1,53 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Brain, Heart, Camera, Users, Sparkles, MapPin } from "lucide-react";
+import { Brain, Heart, Camera, Users, Sparkles, MapPin, Archive, Gift, TrendingUp } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const features = [
+const phase1Features = [
+  {
+    icon: Archive,
+    title: "Time Capsule Mode",
+    description: "Seal precious memories today and unlock them on special future dates. Create anticipation and make ordinary days magical.",
+    highlight: "Open on our 5th anniversary",
+    link: "/time-capsule",
+    status: "Live Now"
+  },
+  {
+    icon: Gift,
+    title: "Surprise Memory Drops",
+    description: "Schedule surprise memory deliveries for your loved ones. Turn ordinary days into extraordinary moments.",
+    highlight: "Unexpected joy delivered",
+    link: "/surprise-drops", 
+    status: "Live Now"
+  },
+  {
+    icon: TrendingUp,
+    title: "Bond Chemistry Score",
+    description: "Track your relationship energy and see how shared memories strengthen your connection over time.",
+    highlight: "Your bond score: 85/100",
+    link: "/memory-score",
+    status: "Live Now"
+  }
+];
+
+const futureFeatures = [
   {
     icon: Brain,
-    title: "AI-Powered Curation",
-    description: "Smart algorithms organize your memories into beautiful stories, finding connections you never noticed.",
-    highlight: "Our Road Trips, Rainy Day Adventures, Summer 2024"
+    title: "Mood-Linked Memory Resurfacing",
+    description: "AI detects your emotional state and surfaces the perfect memories to match your mood.",
+    highlight: "Feeling lonely? Here's a warm hug from last summer"
   },
   {
     icon: Heart,
-    title: "Emotional Storytelling",
-    description: "Add voice notes, poems, and personal touches that capture the feelings behind every moment.",
-    highlight: "What was your favorite part of this trip?"
+    title: "Love Languages Personalization", 
+    description: "Tailored memory prompts and captions based on your unique love language preferences.",
+    highlight: "Words of Affirmation: 'You make every moment special'"
   },
   {
     icon: Sparkles,
-    title: "Memory Resurfacing",
-    description: "Rediscover precious moments on anniversaries, birthdays, or when you need a smile.",
-    highlight: "Remember this day last year?"
-  },
-  {
-    icon: Users,
-    title: "Collaborative Canvas",
-    description: "Build your scrapbook together, adding memories and stories from both perspectives.",
-    highlight: "Living scrapbook with interactive tiles"
-  },
-  {
-    icon: Camera,
-    title: "Smart Integration",
-    description: "Seamlessly import from Instagram, Google Photos, and WhatsApp to never lose a moment.",
-    highlight: "Auto-sync from your favorite platforms"
-  },
-  {
-    icon: MapPin,
-    title: "Location Stories",
-    description: "Group memories by places you've been together, creating beautiful travel narratives.",
-    highlight: "Goa Summer 2024, Paris Weekend"
+    title: "AI Memory Re-Enactment",
+    description: "Transform static photos into living moments with subtle animations and ambient sounds.",
+    highlight: "Your beach photo now has gentle waves and seagulls"
   }
 ];
 
@@ -47,17 +57,21 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
-            Where Technology Meets Love
+            Phase 1: Live Now! 🎉
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We've designed every feature to strengthen your bonds, not just store your photos. 
-            This is memory-keeping reimagined for the heart.
+            Experience the future of memory-keeping today. These innovative features are ready to transform your relationships.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {features.map((feature, index) => (
-            <Card key={index} className="p-6 bg-card/80 backdrop-blur-sm hover:shadow-memory transition-memory border-border/50 group">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {phase1Features.map((feature, index) => (
+            <Card key={index} className="p-6 bg-card/80 backdrop-blur-sm hover:shadow-memory transition-memory border-border/50 group relative overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <span className="text-xs font-bold bg-accent text-accent-foreground px-2 py-1 rounded-full">
+                  {feature.status}
+                </span>
+              </div>
               <div className="mb-4">
                 <div className="w-12 h-12 bg-gradient-warm rounded-lg flex items-center justify-center mb-4 group-hover:shadow-glow transition-memory">
                   <feature.icon className="w-6 h-6 text-primary-foreground" />
@@ -66,7 +80,40 @@ export function FeaturesSection() {
                 <p className="text-muted-foreground leading-relaxed mb-3">
                   {feature.description}
                 </p>
-                <div className="text-sm text-primary font-medium italic">
+                <div className="text-sm text-primary font-medium italic mb-4">
+                  "{feature.highlight}"
+                </div>
+                <Button variant="heart" size="sm" asChild className="w-full">
+                  <Link to={feature.link}>
+                    Try It Now
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
+            Coming Soon: The Future of Love
+          </h3>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            These revolutionary features will make your memories even more magical.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8 mb-12">
+          {futureFeatures.map((feature, index) => (
+            <Card key={index} className="p-6 bg-card/50 backdrop-blur-sm border-border/30 group opacity-75">
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-muted/50 rounded-lg flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-muted-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-muted-foreground">{feature.title}</h3>
+                <p className="text-muted-foreground/80 leading-relaxed mb-3">
+                  {feature.description}
+                </p>
+                <div className="text-sm text-muted-foreground font-medium italic">
                   "{feature.highlight}"
                 </div>
               </div>
@@ -77,18 +124,18 @@ export function FeaturesSection() {
         <div className="text-center">
           <div className="mb-6">
             <span className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full">
-              Coming Soon
+              Phase 2 & Beyond
             </span>
           </div>
-          <h3 className="text-2xl font-bold mb-4">Future Magic</h3>
+          <h3 className="text-2xl font-bold mb-4">Advanced Memory Magic</h3>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-8">
-            <span className="bg-card/60 px-3 py-2 rounded-lg">AR Memory Projection</span>
-            <span className="bg-card/60 px-3 py-2 rounded-lg">Sentiment Music Soundtracks</span>
-            <span className="bg-card/60 px-3 py-2 rounded-lg">Physical Memory Books</span>
-            <span className="bg-card/60 px-3 py-2 rounded-lg">Group Memory Spaces</span>
+            <span className="bg-card/60 px-3 py-2 rounded-lg">Location-Triggered Memory Bubbles</span>
+            <span className="bg-card/60 px-3 py-2 rounded-lg">Memory Matching Games</span>
+            <span className="bg-card/60 px-3 py-2 rounded-lg">Shared AI Diary</span>
+            <span className="bg-card/60 px-3 py-2 rounded-lg">Memory in a Bottle (AR)</span>
           </div>
           <Button variant="vintage" size="lg">
-            Join the Waitlist
+            Join the Future Waitlist
           </Button>
         </div>
       </div>
