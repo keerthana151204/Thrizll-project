@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Archive, Gift, TrendingUp, Home } from "lucide-react";
+import { Heart, Archive, Gift, TrendingUp, Home, Brain, MessageCircle, Book } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export function Navigation() {
@@ -10,6 +10,9 @@ export function Navigation() {
     { href: "/time-capsule", label: "Time Capsule", icon: Archive },
     { href: "/surprise-drops", label: "Surprise Drops", icon: Gift },
     { href: "/memory-score", label: "Bond Score", icon: TrendingUp },
+    { href: "/mood-memories", label: "Mood Memories", icon: Brain },
+    { href: "/love-languages", label: "Love Languages", icon: MessageCircle },
+    { href: "/shared-diary", label: "Shared Diary", icon: Book },
   ];
 
   return (
