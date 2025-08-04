@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Archive, Gift, TrendingUp, Home, Brain, MessageCircle, Book } from "lucide-react";
+import { Heart, Archive, Gift, TrendingUp, Home, Brain, MessageCircle, Book, Sparkles, MapPin, Gamepad2 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export function Navigation() {
@@ -13,6 +13,9 @@ export function Navigation() {
     { href: "/mood-memories", label: "Mood Memories", icon: Brain },
     { href: "/love-languages", label: "Love Languages", icon: MessageCircle },
     { href: "/shared-diary", label: "Shared Diary", icon: Book },
+    { href: "/memory-re-enactment", label: "AI Re-Enactment", icon: Sparkles },
+    { href: "/location-memories", label: "Location Bubbles", icon: MapPin },
+    { href: "/memory-games", label: "Memory Games", icon: Gamepad2 },
   ];
 
   return (

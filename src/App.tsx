@@ -10,6 +10,9 @@ import MemoryScore from "./pages/MemoryScore";
 import MoodMemories from "./pages/MoodMemories";
 import LoveLanguages from "./pages/LoveLanguages";
 import SharedDiary from "./pages/SharedDiary";
+import MemoryReEnactment from "./pages/MemoryReEnactment";
+import LocationMemories from "./pages/LocationMemories";
+import MemoryGames from "./pages/MemoryGames";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +31,9 @@ const App = () => (
           <Route path="/mood-memories" element={<MoodMemories />} />
           <Route path="/love-languages" element={<LoveLanguages />} />
           <Route path="/shared-diary" element={<SharedDiary />} />
+          <Route path="/memory-re-enactment" element={<MemoryReEnactment />} />
+          <Route path="/location-memories" element={<LocationMemories />} />
+          <Route path="/memory-games" element={<MemoryGames />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

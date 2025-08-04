@@ -57,24 +57,45 @@ const phase2Features = [
   }
 ];
 
-const futureFeatures = [
+const phase3Features = [
   {
     icon: Sparkles,
     title: "AI Memory Re-Enactment",
     description: "Transform static photos into living moments with subtle animations and ambient sounds.",
-    highlight: "Your beach photo now has gentle waves and seagulls"
+    highlight: "Your beach photo now has gentle waves and seagulls",
+    link: "/memory-re-enactment",
+    status: "Live Now"
   },
   {
     icon: MapPin,
-    title: "Location-Triggered Memory Bubbles",
+    title: "Location-Triggered Memory Bubbles", 
     description: "Discover past memories when you return to special places together.",
-    highlight: "Standing outside your favorite café triggers memories from 2 years ago"
+    highlight: "Standing outside your favorite café triggers memories from 2 years ago",
+    link: "/location-memories",
+    status: "Live Now"
   },
   {
     icon: Heart,
     title: "Memory Matching Games",
     description: "Turn your shared memories into fun puzzle games to play together.",
-    highlight: "Match photos from your beach trip - can you remember the year?"
+    highlight: "Match photos from your beach trip - can you remember the year?",
+    link: "/memory-games", 
+    status: "Live Now"
+  }
+];
+
+const futureFeatures = [
+  {
+    icon: Camera,
+    title: "Multi-Sensory Experiences",
+    description: "Add touch, smell, and temperature to your memory recreations.",
+    highlight: "Feel the ocean breeze from your beach vacation"
+  },
+  {
+    icon: Users,
+    title: "Memory in a Bottle (AR)",
+    description: "Leave virtual memories in physical spaces using augmented reality.",
+    highlight: "Your anniversary dinner table holds a floating love note"
   }
 ];
 
@@ -160,14 +181,52 @@ export function FeaturesSection() {
 
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
-            Phase 3: Coming Soon
+            Phase 3: Advanced Magic - Live Now! ✨
           </h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Advanced AR, gaming, and immersive memory experiences.
+            Immersive AR, gaming, and next-generation memory experiences are here!
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {phase3Features.map((feature, index) => (
+            <Card key={index} className="p-6 bg-card/80 backdrop-blur-sm hover:shadow-memory transition-memory border-border/50 group relative overflow-hidden">
+              <div className="absolute top-4 right-4">
+                <span className="text-xs font-bold bg-accent text-accent-foreground px-2 py-1 rounded-full">
+                  {feature.status}
+                </span>
+              </div>
+              <div className="mb-4">
+                <div className="w-12 h-12 bg-gradient-warm rounded-lg flex items-center justify-center mb-4 group-hover:shadow-glow transition-memory">
+                  <feature.icon className="w-6 h-6 text-primary-foreground" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                <p className="text-muted-foreground leading-relaxed mb-3">
+                  {feature.description}
+                </p>
+                <div className="text-sm text-primary font-medium italic mb-4">
+                  "{feature.highlight}"
+                </div>
+                <Button variant="heart" size="sm" asChild className="w-full">
+                  <Link to={feature.link}>
+                    Try It Now
+                  </Link>
+                </Button>
+              </div>
+            </Card>
+          ))}
+        </div>
+
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
+            Phase 4: Coming Soon
+          </h3>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Next-generation AR and multi-sensory memory experiences.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           {futureFeatures.map((feature, index) => (
             <Card key={index} className="p-6 bg-card/50 backdrop-blur-sm border-border/30 group opacity-75">
               <div className="mb-4">
@@ -189,15 +248,15 @@ export function FeaturesSection() {
         <div className="text-center">
           <div className="mb-6">
             <span className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full">
-              Phase 2 & Beyond
+              Phase 4 & Beyond
             </span>
           </div>
-          <h3 className="text-2xl font-bold mb-4">Advanced Memory Magic</h3>
+          <h3 className="text-2xl font-bold mb-4">Next-Generation Memory Magic</h3>
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-8">
-            <span className="bg-card/60 px-3 py-2 rounded-lg">Memory Matching Games</span>
             <span className="bg-card/60 px-3 py-2 rounded-lg">Memory in a Bottle (AR)</span>
-            <span className="bg-card/60 px-3 py-2 rounded-lg">Advanced AI Re-Enactment</span>
             <span className="bg-card/60 px-3 py-2 rounded-lg">Multi-Sensory Experiences</span>
+            <span className="bg-card/60 px-3 py-2 rounded-lg">Holographic Memories</span>
+            <span className="bg-card/60 px-3 py-2 rounded-lg">Time-Travel Experiences</span>
           </div>
           <Button variant="vintage" size="lg">
             Join the Future Waitlist
