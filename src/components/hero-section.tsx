@@ -24,7 +24,7 @@ export function HeroSection() {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6 leading-tight">
-          Loveable
+          Thrizll
         </h1>
         
         <p className="text-xl md:text-2xl text-foreground/80 mb-4 max-w-2xl mx-auto leading-relaxed">

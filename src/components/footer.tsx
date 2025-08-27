@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-6">
           <h3 className="text-2xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-2">
-            Loveable
+            Thrizll
           </h3>
           <p className="text-muted-foreground">
             Building technology that brings hearts closer together
@@ -20,7 +20,7 @@ export function Footer() {
         </div>
         
         <div className="mt-6 pt-6 border-t border-border/30 text-xs text-muted-foreground">
-          <p>© 2024 Loveable. All memories are precious.</p>
+          <p>© 2024 Thrizll. All memories are precious.</p>
         </div>
       </div>
     </footer>
