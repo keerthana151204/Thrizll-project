@@ -105,7 +105,7 @@ export function FeaturesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
-            Phase 1: Live Now! 🎉
+            Start Your Journey 🎉
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Experience the future of memory-keeping today. These innovative features are ready to transform your relationships.
@@ -143,7 +143,7 @@ export function FeaturesSection() {
 
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
-            Phase 2: Core Innovation - Live Now! 🚀
+            Deepen Your Connection 🚀
           </h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Advanced emotional intelligence and personalization features are here!
@@ -181,7 +181,7 @@ export function FeaturesSection() {
 
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
-            Phase 3: Advanced Magic - Live Now! ✨
+            Immersive Experiences ✨
           </h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Immersive AR, gaming, and next-generation memory experiences are here!
@@ -219,7 +219,7 @@ export function FeaturesSection() {
 
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold bg-gradient-sunset bg-clip-text text-transparent mb-6">
-            Phase 4: Coming Soon
+            Future Innovations
           </h3>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
             Next-generation AR and multi-sensory memory experiences.
@@ -248,7 +248,7 @@ export function FeaturesSection() {
         <div className="text-center">
           <div className="mb-6">
             <span className="text-sm font-medium text-primary bg-primary/10 px-4 py-2 rounded-full">
-              Phase 4 & Beyond
+              Next Generation
             </span>
           </div>
           <h3 className="text-2xl font-bold mb-4">Next-Generation Memory Magic</h3>
