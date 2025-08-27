@@ -72,7 +72,8 @@ export default {
 			backgroundImage: {
 				'gradient-sunset': 'var(--gradient-sunset)',
 				'gradient-memory': 'var(--gradient-memory)',
-				'gradient-warm': 'var(--gradient-warm)'
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-bond': 'var(--gradient-bond)'
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',

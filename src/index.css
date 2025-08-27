@@ -2,64 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Loveable Scrapbook Design System - Warm, Romantic, Memory-focused
+/* Build-to-Bond 2025 Design System - Purple/Pink Gradient Theme
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    /* Warm cream base */
-    --background: 35 100% 98%;
-    --foreground: 15 25% 15%;
+    /* Light purple/pink base */
+    --background: 280 100% 99%;
+    --foreground: 270 15% 15%;
 
     /* Soft card backgrounds */
-    --card: 35 50% 97%;
-    --card-foreground: 15 25% 15%;
+    --card: 285 80% 98%;
+    --card-foreground: 270 15% 15%;
 
     /* Popover styling */
-    --popover: 35 50% 97%;
-    --popover-foreground: 15 25% 15%;
+    --popover: 285 80% 98%;
+    --popover-foreground: 270 15% 15%;
 
-    /* Primary: Warm rose gold */
-    --primary: 15 65% 65%;
-    --primary-foreground: 35 100% 98%;
-    --primary-glow: 15 85% 75%;
+    /* Primary: Vibrant purple */
+    --primary: 270 75% 65%;
+    --primary-foreground: 280 100% 99%;
+    --primary-glow: 275 85% 75%;
 
-    /* Secondary: Soft peach */
-    --secondary: 25 70% 88%;
-    --secondary-foreground: 15 35% 25%;
+    /* Secondary: Soft pink */
+    --secondary: 320 70% 85%;
+    --secondary-foreground: 270 25% 25%;
 
-    /* Muted: Cream tones */
-    --muted: 35 30% 92%;
-    --muted-foreground: 15 15% 45%;
+    /* Muted: Light purple tones */
+    --muted: 280 30% 93%;
+    --muted-foreground: 270 15% 45%;
 
-    /* Accent: Gentle coral */
-    --accent: 10 75% 75%;
-    --accent-foreground: 15 35% 25%;
+    /* Accent: Bright pink */
+    --accent: 315 75% 75%;
+    --accent-foreground: 270 25% 25%;
 
     /* Destructive: Soft red */
     --destructive: 0 65% 65%;
-    --destructive-foreground: 35 100% 98%;
+    --destructive-foreground: 280 100% 99%;
 
-    /* Borders and inputs: Warm neutrals */
-    --border: 25 20% 85%;
-    --input: 25 25% 90%;
-    --ring: 15 65% 65%;
+    /* Borders and inputs: Purple neutrals */
+    --border: 280 20% 85%;
+    --input: 285 25% 90%;
+    --ring: 270 75% 65%;
 
     /* Memory-specific colors */
-    --memory-warm: 30 80% 80%;
-    --memory-cool: 200 30% 85%;
-    --memory-vintage: 45 40% 75%;
+    --memory-warm: 315 80% 80%;
+    --memory-cool: 260 50% 85%;
+    --memory-vintage: 290 40% 75%;
     
-    /* Gradients for romantic feels */
-    --gradient-sunset: linear-gradient(135deg, hsl(15 65% 65%), hsl(25 70% 75%), hsl(35 75% 85%));
-    --gradient-memory: linear-gradient(180deg, hsl(35 100% 98%), hsl(25 50% 95%));
-    --gradient-warm: linear-gradient(45deg, hsl(15 85% 75%), hsl(10 75% 75%));
+    /* Gradients for purple/pink theme */
+    --gradient-sunset: linear-gradient(135deg, hsl(270 75% 65%), hsl(300 70% 75%), hsl(320 75% 85%));
+    --gradient-memory: linear-gradient(180deg, hsl(280 100% 99%), hsl(285 50% 95%));
+    --gradient-warm: linear-gradient(45deg, hsl(275 85% 75%), hsl(315 75% 75%));
+    --gradient-bond: linear-gradient(135deg, hsl(270 75% 65%), hsl(315 75% 75%));
     
-    /* Shadows with warm tints */
-    --shadow-soft: 0 4px 20px -2px hsl(15 65% 65% / 0.1);
-    --shadow-memory: 0 8px 32px -4px hsl(15 65% 65% / 0.15);
-    --shadow-glow: 0 0 40px hsl(15 85% 75% / 0.3);
+    /* Shadows with purple tints */
+    --shadow-soft: 0 4px 20px -2px hsl(270 75% 65% / 0.1);
+    --shadow-memory: 0 8px 32px -4px hsl(270 75% 65% / 0.15);
+    --shadow-glow: 0 0 40px hsl(275 85% 75% / 0.3);
     
     /* Animation curves for smooth, loving feels */
     --transition-love: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
