@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { Heart, Archive, Gift, TrendingUp, Home, Brain, MessageCircle, Book, Sparkles, MapPin, Gamepad2, LogOut } from "lucide-react";
+import { Heart, Archive, Gift, TrendingUp, Home, Brain, MessageCircle, Book, Sparkles, MapPin, Gamepad2, Menu } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { useAuth } from "@/hooks/use-auth";
 
 export function Navigation() {
   const location = useLocation();
-  const { signOut } = useAuth();
 
   const mainItems = [
     { href: "/", label: "Home", icon: Home },
@@ -115,17 +113,6 @@ export function Navigation() {
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-
-              {/* Sign Out Button */}
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={signOut}
-                className="gap-2 text-muted-foreground hover:text-destructive"
-              >
-                <LogOut className="w-4 h-4" />
-                <span className="hidden sm:inline">Sign Out</span>
-              </Button>
             </div>
           </NavigationMenuList>
         </NavigationMenu>

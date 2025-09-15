@@ -1,74 +1,73 @@
-# Thrizll - A Living Scrapbook for Your Shared Memories
+# Welcome to your Lovable project
 
-**Live Demo**: [https://thrizll.lovable.app/](https://thrizll.lovable.app/)
+## Project info
 
-## Project Overview
+**URL**: https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606
 
-Thrizll is an AI-powered memory experience platform that transforms scattered photos and moments into an emotionally rich, collaborative storytelling platform. Built to strengthen relationships through shared memory curation and interactive experiences.
+## How can I edit this code?
 
-## Quick Setup for Evaluators
+There are several ways of editing your application.
 
-### Prerequisites
-- Node.js 18+ and npm
-- Modern web browser
+**Use Lovable**
 
-### Installation & Setup
+Simply visit the [Lovable Project](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606) and start prompting.
 
-1. **Clone the repository**
-   ```bash
-   git clone [your-repo-url]
-   cd thrizll
-   ```
+Changes made via Lovable will be committed automatically to this repo.
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+**Use your preferred IDE**
 
-3. **Environment Configuration**
-   Create a `.env` file in the root directory with the following:
-   ```env
-   VITE_SUPABASE_URL=https://loyugrfgnobqfrboobjq.supabase.co
-   VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxveXVncmZnbm9icWZyYm9vYmpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc0MTE2MzksImV4cCI6MjA3Mjk4NzYzOX0.dKrMuYG-FZaAWEWC3DjrjPWk6KZtc1DUcdSnxsSTzRg
-   ```
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-5. **Access the application**
-   - Open your browser and navigate to `http://localhost:5173`
-   - Create a test account using any email (no verification required)
-   - Explore the authenticated features and dashboard
+Follow these steps:
 
-## Testing the Application
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-### Authentication Flow
-- Landing page displays marketing content and sign-in/sign-up forms
-- Create account with any email (password minimum requirements apply)
-- Upon authentication, users are redirected to the main dashboard
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### Key Features to Test
-- **Dashboard**: Central hub for memory management
-- **Memory Upload**: Photo and story upload functionality
-- **Navigation**: Responsive navigation with authentication-aware routing
-- **Protected Routes**: All feature pages require authentication
-- **Responsive Design**: Test across different screen sizes
+# Step 3: Install the necessary dependencies.
+npm i
 
-## Technology Stack
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-- **Frontend**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS with custom design system
-- **UI Components**: shadcn/ui with Radix UI primitives
-- **Backend**: Supabase (Authentication, Database, Storage)
-- **Routing**: React Router DOM
+**Edit a file directly in GitHub**
 
-## Architecture
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-The application follows a component-based architecture with:
-- Protected routing system
-- Centralized authentication state management
-- Responsive design system
-- Modular UI components
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
