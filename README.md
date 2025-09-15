@@ -8,7 +8,7 @@ Thrizll transforms scattered photos and moments into an emotionally rich, AI-pow
 
 ## Features
 
-### 🤖 AI-Powered Curation
+### AI-Powered Curation
 - Intelligent organization of your memories
 - Smart suggestions for memory connections
 - Automated mood and sentiment analysis
