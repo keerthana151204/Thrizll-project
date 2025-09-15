@@ -1,73 +1,142 @@
-# Welcome to your Lovable project
+# Thrizll
 
-## Project info
+## A Living Scrapbook for Your Shared Memories
 
-**URL**: https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606
+**Live Demo**: [https://thrizll.lovable.app/](https://thrizll.lovable.app/)
 
-## How can I edit this code?
+Thrizll transforms scattered photos and moments into an emotionally rich, AI-powered memory experience that grows stronger with every shared story. Built to bond, Thrizll helps couples and close relationships create deeper connections through collaborative storytelling and memory curation.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+### 🤖 AI-Powered Curation
+- Intelligent organization of your memories
+- Smart suggestions for memory connections
+- Automated mood and sentiment analysis
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606) and start prompting.
+### Collaborative Storytelling
+- Shared diary functionality
+- Interactive memory games
+- Real-time memory sharing and collaboration
 
-Changes made via Lovable will be committed automatically to this repo.
+### Emotional Connections
+- Love languages integration
+- Mood-based memory filtering
+- Personalized memory recommendations
 
-**Use your preferred IDE**
+### Core Features
+- **Dashboard**: Central hub for all your memories
+- **Memory Upload**: Easy photo and story uploads
+- **Location Memories**: GPS-tagged memory experiences
+- **Memory Games**: Interactive bonding activities
+- **Time Capsule**: Scheduled memory reveals
+- **Surprise Drops**: Unexpected memory gifts
+- **Memory Re-enactment**: Recreate special moments
+- **Memory Scoring**: Track your relationship growth
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Technology Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Backend**: Supabase (Authentication, Database, Storage)
+- **State Management**: React Context + Custom Hooks
+- **Routing**: React Router DOM
+- **Icons**: Lucide React
+- **Form Handling**: React Hook Form with Zod validation
 
-Follow these steps:
+## Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
+- Node.js 18+ and npm
+- Supabase account (for backend services)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone 
+   cd thrizll
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-**Edit a file directly in GitHub**
+3. **Environment Setup**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-**Use GitHub Codespaces**
+5. **Open your browser**
+   Navigate to `http://localhost:5173`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Database Setup
+The app uses Supabase for authentication and data storage. Make sure to:
+- Set up authentication in your Supabase project
+- Configure Row Level Security (RLS) policies
+- Set up storage buckets for memory uploads
 
-## What technologies are used for this project?
+## Design System
 
-This project is built with:
+Thrizll uses a comprehensive design system built on Tailwind CSS with:
+- **Semantic color tokens** for consistent theming
+- **Custom gradients** for emotional warmth
+- **Responsive typography** scales
+- **Interactive animations** using CSS transitions
+- **Dark/light mode** support
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Authentication
 
-## How can I deploy this project?
+The app requires authentication before accessing any features:
+- **Sign Up**: Create new accounts with email verification
+- **Sign In**: Secure login with Supabase Auth
+- **Protected Routes**: All feature pages require authentication
+- **Session Management**: Automatic session handling and persistence
 
-Simply open [Lovable](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606) and click on Share -> Publish.
+## Responsive Design
 
-## Can I connect a custom domain to my Lovable project?
+Thrizll is fully responsive and works seamlessly across:
+- Desktop computers
+- Tablets
+- Mobile devices
+- Various screen sizes and orientations
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Lovable Deployment
+1. Open your [Lovable project](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606)
+2. Click "Share" → "Publish"
+3. Your app will be live at `thrizll.lovable.app`
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Custom Domain
+Connect your own domain through Project Settings → Domains in Lovable.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is built with Lovable and follows modern web development best practices.
+
+## Links
+
+- **Live App**: [https://thrizll.lovable.app/](https://thrizll.lovable.app/)
+- **Lovable Project**: [Edit in Lovable](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606)
+
+---
+
+**"Build to Bond"** - Thrizll helps create stronger relationships through the power of shared memories.tips-tricks/custom-domain#step-by-step-guide)
