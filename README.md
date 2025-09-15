@@ -1,61 +1,22 @@
-# Thrizll
-
-## A Living Scrapbook for Your Shared Memories
+# Thrizll - A Living Scrapbook for Your Shared Memories
 
 **Live Demo**: [https://thrizll.lovable.app/](https://thrizll.lovable.app/)
 
-Thrizll transforms scattered photos and moments into an emotionally rich, AI-powered memory experience that grows stronger with every shared story. Built to bond, Thrizll helps couples and close relationships create deeper connections through collaborative storytelling and memory curation.
+## Project Overview
 
-## Features
+Thrizll is an AI-powered memory experience platform that transforms scattered photos and moments into an emotionally rich, collaborative storytelling platform. Built to strengthen relationships through shared memory curation and interactive experiences.
 
-### AI-Powered Curation
-- Intelligent organization of your memories
-- Smart suggestions for memory connections
-- Automated mood and sentiment analysis
-
-### Collaborative Storytelling
-- Shared diary functionality
-- Interactive memory games
-- Real-time memory sharing and collaboration
-
-### Emotional Connections
-- Love languages integration
-- Mood-based memory filtering
-- Personalized memory recommendations
-
-### Core Features
-- **Dashboard**: Central hub for all your memories
-- **Memory Upload**: Easy photo and story uploads
-- **Location Memories**: GPS-tagged memory experiences
-- **Memory Games**: Interactive bonding activities
-- **Time Capsule**: Scheduled memory reveals
-- **Surprise Drops**: Unexpected memory gifts
-- **Memory Re-enactment**: Recreate special moments
-- **Memory Scoring**: Track your relationship growth
-
-## Technology Stack
-
-- **Frontend**: React 18 with TypeScript
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS with custom design system
-- **UI Components**: shadcn/ui with Radix UI primitives
-- **Backend**: Supabase (Authentication, Database, Storage)
-- **State Management**: React Context + Custom Hooks
-- **Routing**: React Router DOM
-- **Icons**: Lucide React
-- **Form Handling**: React Hook Form with Zod validation
-
-## Getting Started
+## Quick Setup for Evaluators
 
 ### Prerequisites
 - Node.js 18+ and npm
-- Supabase account (for backend services)
+- Modern web browser
 
-### Installation
+### Installation & Setup
 
 1. **Clone the repository**
    ```bash
-   git clone 
+   git clone [your-repo-url]
    cd thrizll
    ```
 
@@ -64,11 +25,11 @@ Thrizll transforms scattered photos and moments into an emotionally rich, AI-pow
    npm install
    ```
 
-3. **Environment Setup**
-   Create a `.env` file in the root directory:
+3. **Environment Configuration**
+   Create a `.env` file in the root directory with the following:
    ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   VITE_SUPABASE_URL=https://loyugrfgnobqfrboobjq.supabase.co
+   VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxveXVncmZnbm9icWZyYm9vYmpxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc0MTE2MzksImV4cCI6MjA3Mjk4NzYzOX0.dKrMuYG-FZaAWEWC3DjrjPWk6KZtc1DUcdSnxsSTzRg
    ```
 
 4. **Start the development server**
@@ -76,67 +37,38 @@ Thrizll transforms scattered photos and moments into an emotionally rich, AI-pow
    npm run dev
    ```
 
-5. **Open your browser**
-   Navigate to `http://localhost:5173`
+5. **Access the application**
+   - Open your browser and navigate to `http://localhost:5173`
+   - Create a test account using any email (no verification required)
+   - Explore the authenticated features and dashboard
 
-### Database Setup
-The app uses Supabase for authentication and data storage. Make sure to:
-- Set up authentication in your Supabase project
-- Configure Row Level Security (RLS) policies
-- Set up storage buckets for memory uploads
+## Testing the Application
 
-## Design System
+### Authentication Flow
+- Landing page displays marketing content and sign-in/sign-up forms
+- Create account with any email (password minimum requirements apply)
+- Upon authentication, users are redirected to the main dashboard
 
-Thrizll uses a comprehensive design system built on Tailwind CSS with:
-- **Semantic color tokens** for consistent theming
-- **Custom gradients** for emotional warmth
-- **Responsive typography** scales
-- **Interactive animations** using CSS transitions
-- **Dark/light mode** support
-
-## Authentication
-
-The app requires authentication before accessing any features:
-- **Sign Up**: Create new accounts with email verification
-- **Sign In**: Secure login with Supabase Auth
+### Key Features to Test
+- **Dashboard**: Central hub for memory management
+- **Memory Upload**: Photo and story upload functionality
+- **Navigation**: Responsive navigation with authentication-aware routing
 - **Protected Routes**: All feature pages require authentication
-- **Session Management**: Automatic session handling and persistence
+- **Responsive Design**: Test across different screen sizes
 
-## Responsive Design
+## Technology Stack
 
-Thrizll is fully responsive and works seamlessly across:
-- Desktop computers
-- Tablets
-- Mobile devices
-- Various screen sizes and orientations
+- **Frontend**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui with Radix UI primitives
+- **Backend**: Supabase (Authentication, Database, Storage)
+- **Routing**: React Router DOM
 
-## Deployment
+## Architecture
 
-### Lovable Deployment
-1. Open your [Lovable project](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606)
-2. Click "Share" → "Publish"
-3. Your app will be live at `thrizll.lovable.app`
-
-### Custom Domain
-Connect your own domain through Project Settings → Domains in Lovable.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is built with Lovable and follows modern web development best practices.
-
-## Links
-
-- **Live App**: [https://thrizll.lovable.app/](https://thrizll.lovable.app/)
-- **Lovable Project**: [Edit in Lovable](https://lovable.dev/projects/e5b56bf6-50f2-4e42-b826-944460b1d606)
-
----
-
-**"Build to Bond"** - Thrizll helps create stronger relationships through the power of shared memories.tips-tricks/custom-domain#step-by-step-guide)
+The application follows a component-based architecture with:
+- Protected routing system
+- Centralized authentication state management
+- Responsive design system
+- Modular UI components
